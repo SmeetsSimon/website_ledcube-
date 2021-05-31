@@ -5,20 +5,106 @@
         <meta name="info" content="Led Cube beschrijving">
         <title>Led Cube</title>
         <style>
+            .header {
+              background-color: #f1f1f1;
+              padding: 20px;
+              text-align: center;
+            }
+
+
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+
+            li {
+              float: left;
+            }
+
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+
+            .active {
+              background-color: #04AA6D;
+            }
+
+            .footer {
+              background-color: #F1F1F1;
+              text-align: center;
+              padding: 10px;
+            }
+
+            img {
+              border: 1px solid #ddd;
+              border-radius: 4px;
+              padding: 5px;
+              display: block;
+              margin-left: auto;
+              width: 200px;
+            }
+
+
+            .text {
+              float: left;
+              width: 60%;
+              padding: 15px;
+            }
+
+
+
         </style>
     </head>
     <body style="background-color:white;">
      <header>
-        <nav>
-            <h1 style="font-size:50px">Led Cube</h1>
-        </nav>
+         <div class="header">
+          <h1>LedCube</h1>
+         </div>
+
+         <ul>
+             <li>
+                 <a href="www.google.com">LedCube code</a>
+             </li>
+             <li>
+                 <a href="www.google.com">uitleg</a>
+             </li>
+             <li>
+                 <a href="www.google.com">schema</a>
+             </li>
+             <li>
+                 <a href="www.google.com">berekeningen</a>
+             </li>
+         </ul>
+
      </header>
      <main>
-         <img>
+         <div class="text">
+             <h1>
+                 een ledcube is een cubes met 4x4x4 leds die we zelf hebben moeten solderen op een printplaat en daarna met onze arduino geprogrameerd
+
+             </h1>
+         </div>
+
+
+
+         <img src="sddefault.jpg">
+
      </main>
      <footer>
-
-
+         <div class="footer">
+             <p>Footer</p>
+         </div>
      </footer>
 
     </body>
