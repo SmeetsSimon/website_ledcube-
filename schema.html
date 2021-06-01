@@ -5,10 +5,28 @@
         <meta name="info" content="Led Cube beschrijving">
         <title>Led Cube</title>
         <style>
-            .header {
-              background-color: #007CC7;
-              padding: 20px;
+
+            body {
+              background-color: #12232E;
+              font-family: cursive;
+            }
+
+
+            .glow {
+              font-size: 80px;
+              color: #fff;
               text-align: center;
+              animation: glow 1s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes glow {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007CC7, 0 0 40px #007CC7, 0 0 50px #007CC7, 0 0 60px #007CC7, 0 0 70px #007CC7;
+              }
+
+              to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #4DA8DA, 0 0 40px #4DA8DA, 0 0 50px #4DA8DA, 0 0 60px #4DA8DA, 0 0 70px #4DA8DA, 0 0 80px #4DA8DA;
+              }
             }
 
 
@@ -76,11 +94,13 @@
         </style>
     </head>
 
-    <body style="background-color:white;">
+
      <header>
-         <div class="header">
-          <h1 style="color:#EEFBFB">LedCube</h1>
-         </div>
+         <body>
+
+          <h1 class="glow">LedCube</h1>
+
+         </body>
 
          <ul>
              <li>
@@ -111,5 +131,5 @@
          </div>
      </footer>
 
-    </body>
+
 </html>
